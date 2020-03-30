@@ -35,8 +35,8 @@ class Song
       if @@genre_count.key?(genre) #already a key
         value += 1
       else
-        @@genre_count[genre] = value
         value+= 1
+        @@genre_count[genre] = value
       end
     end
     @@genre_count
